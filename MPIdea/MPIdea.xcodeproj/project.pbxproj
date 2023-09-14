@@ -3,16 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A3BE2C10A42AA5D6AEFA0D7 /* Pods_MPIdea.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 476AFD1BB11961FD376F18C0 /* Pods_MPIdea.framework */; };
 		D566FF242AB389210090E1AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D566FF232AB389210090E1AC /* AppDelegate.swift */; };
 		D566FF282AB389210090E1AC /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D566FF272AB389210090E1AC /* TableViewController.swift */; };
 		D566FF2D2AB389240090E1AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D566FF2C2AB389240090E1AC /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D287DDDB010BB0A0F3CEECD /* Pods-MPIdea.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MPIdea.debug.xcconfig"; path = "Target Support Files/Pods-MPIdea/Pods-MPIdea.debug.xcconfig"; sourceTree = "<group>"; };
+		25C3D6E28482F1C19B79CE49 /* Pods-MPIdea.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MPIdea.release.xcconfig"; path = "Target Support Files/Pods-MPIdea/Pods-MPIdea.release.xcconfig"; sourceTree = "<group>"; };
+		476AFD1BB11961FD376F18C0 /* Pods_MPIdea.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MPIdea.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D566FF202AB389210090E1AC /* MPIdea.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MPIdea.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D566FF232AB389210090E1AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D566FF272AB389210090E1AC /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
@@ -25,17 +29,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A3BE2C10A42AA5D6AEFA0D7 /* Pods_MPIdea.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E1C5881A780853154F7DA54 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				476AFD1BB11961FD376F18C0 /* Pods_MPIdea.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D566FF172AB389210090E1AC = {
 			isa = PBXGroup;
 			children = (
 				D566FF222AB389210090E1AC /* MPIdea */,
 				D566FF212AB389210090E1AC /* Products */,
+				E6B4BC1A294695D618BFF511 /* Pods */,
+				6E1C5881A780853154F7DA54 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,6 +81,16 @@
 			path = AppDelegate;
 			sourceTree = "<group>";
 		};
+		E6B4BC1A294695D618BFF511 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0D287DDDB010BB0A0F3CEECD /* Pods-MPIdea.debug.xcconfig */,
+				25C3D6E28482F1C19B79CE49 /* Pods-MPIdea.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -73,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D566FF342AB389240090E1AC /* Build configuration list for PBXNativeTarget "MPIdea" */;
 			buildPhases = (
+				9178A501C72479CB27246584 /* [CP] Check Pods Manifest.lock */,
 				D566FF1C2AB389210090E1AC /* Sources */,
 				D566FF1D2AB389210090E1AC /* Frameworks */,
 				D566FF1E2AB389210090E1AC /* Resources */,
+				6D346E6E2D18FCB6D3AB6C9F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -102,7 +129,7 @@
 				};
 			};
 			buildConfigurationList = D566FF1B2AB389210090E1AC /* Build configuration list for PBXProject "MPIdea" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -129,6 +156,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6D346E6E2D18FCB6D3AB6C9F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MPIdea/Pods-MPIdea-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MPIdea/Pods-MPIdea-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MPIdea/Pods-MPIdea-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9178A501C72479CB27246584 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MPIdea-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D566FF1C2AB389210090E1AC /* Sources */ = {
@@ -259,6 +328,7 @@
 		};
 		D566FF352AB389240090E1AC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D287DDDB010BB0A0F3CEECD /* Pods-MPIdea.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -287,6 +357,7 @@
 		};
 		D566FF362AB389240090E1AC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25C3D6E28482F1C19B79CE49 /* Pods-MPIdea.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
